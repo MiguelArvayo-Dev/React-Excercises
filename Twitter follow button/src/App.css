@@ -1,0 +1,74 @@
+.tw-follow-card {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 0.8rem;
+  justify-content: space-between;
+}
+
+.tw-follow-card-name {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.tw-follow-card-profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.tw-follow-card-account {
+  opacity: 0.6;
+}
+
+.tw-follow-card-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 1000px;
+}
+
+.tw-follow-card-button {
+  cursor: pointer;
+  margin-left: 16px;
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-weight: bold;
+  border: 1px solid #000;
+  transition: 0.3s ease background-color;
+}
+.tw-follow-card-button.is-following {
+  border: 1px solid #bbb;
+  background: transparent;
+  color: white;
+  width: 120px;
+}
+
+.tw-follow-card-button:hover {
+  opacity: 0.8;
+}
+
+.tw-follow-card-button.is-following:hover {
+  background: rgba(250, 128, 114, 0.507);
+  color: red;
+  border: red;
+}
+
+.tw-follow-card-button-stop-following {
+  display: none;
+}
+
+.tw-follow-card-button-to-follow {
+  display: block;
+  transition: 0.3s;
+}
+
+.tw-follow-card-button.is-following:hover .tw-follow-card-button-to-follow {
+  display: none;
+}
+
+.tw-follow-card-button.is-following:hover
+  .tw-follow-card-button-stop-following {
+  display: block;
+  transition: 0.3s;
+}

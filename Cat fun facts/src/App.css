@@ -1,0 +1,17 @@
+main {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: system-ui;
+  color: azure;
+}
+
+main img {
+  max-width: 320px;
+}
+
+body {
+  background-color: rgb(43, 42, 42);
+}
