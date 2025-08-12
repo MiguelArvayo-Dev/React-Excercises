@@ -1,0 +1,53 @@
+.googlecontainer {
+  width: 10rem;
+  height: 10rem;
+}
+.google {
+  position: relative;
+  border-top: 35px solid #ea4335;
+  border-right: 35px solid #4285f4;
+  border-bottom: 35px solid #34ab53;
+  border-left: 35px solid #fbbc05;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  background-color: #242424;
+}
+
+.google::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  width: 80px;
+  height: 35px;
+  background: #4285f4;
+}
+
+.google:after {
+  content: "";
+  position: absolute;
+  border-top: 61px solid transparent;
+  border-right: 61px solid #242424;
+  top: -33px;
+  right: -33px;
+  width: 0;
+  height: 0;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .google:hover {
+    animation: 1s ease-in 0.5s running logo-spin;
+    cursor: pointer;
+  }
+}

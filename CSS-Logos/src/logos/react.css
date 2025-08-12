@@ -1,0 +1,58 @@
+.react {
+  position: relative;
+  background-color: transparent;
+  width: 10rem;
+  height: 10rem;
+  border: transparent;
+  animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.core {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #61dafb;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.orbit {
+  position: absolute;
+  width: 140px;
+  height: 50px;
+  border: 8px solid #61dafb;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.orbit1 {
+  rotate: 0deg;
+}
+.orbit2 {
+  rotate: 60deg;
+}
+.orbit3 {
+  rotate: -60deg;
+}
+
+.react:hover {
+  filter: drop-shadow(0 0 2em #61dafb);
+  cursor: pointer;
+}

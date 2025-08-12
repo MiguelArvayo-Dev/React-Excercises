@@ -1,0 +1,63 @@
+.tiktokbackground {
+  position: relative;
+  height: 10rem;
+  width: 10rem;
+  background: #000000;
+  border: 0;
+  margin: 0 auto;
+}
+
+.tiktok {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 90px;
+  background: #fff;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0px;
+  bottom: 0;
+  filter: drop-shadow(-5px -5px 0 #24f6f0);
+  box-shadow: 4px 4px 0 0 #fe2d52;
+}
+.tiktok:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 20px solid #fff;
+  border-top: 20px solid transparent;
+  border-radius: 50%;
+  margin: auto;
+  left: -40px;
+  right: 0;
+  top: 72px;
+  bottom: 0;
+  transform: rotate(40deg);
+  filter: drop-shadow(6px 0px 0 #fe2d52);
+}
+.tiktok:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 20px solid #fff;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 100px;
+  border-right: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-left: 20px solid transparent;
+  border-radius: 100%;
+  transform: rotate(45deg);
+  filter: drop-shadow(7px 0px 0 #fe2d52);
+}
+
+.tiktokbackground:hover {
+  box-shadow: -4px -4px 0 0 #24f6f0;
+  filter: drop-shadow(7px 7px 0 #fe2d52);
+  cursor: pointer;
+}

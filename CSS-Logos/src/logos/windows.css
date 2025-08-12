@@ -1,0 +1,65 @@
+.split-image-container {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  margin: auto;
+  background: transparent;
+  border: none;
+}
+
+.split-image-container:hover {
+  cursor: pointer;
+}
+
+.quadrant {
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  transition: transform 0.3s ease;
+  margin: auto;
+}
+
+.quadrant-1 {
+  top: 0;
+  left: 0;
+  background-position: top left;
+  background-color: #f86828;
+}
+
+.quadrant-2 {
+  top: 0;
+  right: 0;
+  background-position: top right;
+  background-color: #92c400;
+}
+
+.quadrant-3 {
+  bottom: 0;
+  left: 0;
+  background-position: bottom left;
+  background-color: #00b5f1;
+}
+
+.quadrant-4 {
+  bottom: 0;
+  right: 0;
+  background-position: bottom right;
+  background-color: #ffc400;
+}
+
+.split-image-container:hover .quadrant-1 {
+  transform: translate(-5px, -5px);
+  cursor: pointer;
+}
+
+.split-image-container:hover .quadrant-2 {
+  transform: translate(5px, -5px);
+}
+
+.split-image-container:hover .quadrant-3 {
+  transform: translate(-5px, 5px);
+}
+
+.split-image-container:hover .quadrant-4 {
+  transform: translate(5px, 5px);
+}

@@ -1,0 +1,53 @@
+.youtubespace {
+  height: 10rem;
+  width: 10rem;
+  position: relative;
+  background-color: transparent;
+  border: 0;
+}
+
+.youtube {
+  position: absolute;
+  height: 6rem;
+  width: 8rem;
+  background-color: #e21;
+  padding: 0 15px;
+  border-radius: 50% / 11%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.youtube:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  left: -4%;
+  right: -5%;
+  top: 10%;
+  bottom: 10%;
+  border-radius: 5% / 50%;
+}
+
+.youtube:after {
+  content: "";
+  position: absolute;
+  border: 35px solid #ffffff;
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 35px;
+  left: 5px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.youtube:hover {
+  filter: drop-shadow(0 0 2em #e21);
+  cursor: pointer;
+}
