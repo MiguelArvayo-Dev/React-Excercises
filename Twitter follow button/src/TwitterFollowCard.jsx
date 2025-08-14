@@ -1,16 +1,16 @@
-import { useState } from "react";
+import { useState } from "react"
 
 export function TwitterCard({ userName, children }) {
-  const imgSource = "https://unavatar.io/soundcloud/" + userName;
-  const [isFollowing, setIsFollowing] = useState(false);
-  const followText = isFollowing ? "Following" : "Follow";
+  const imgSource = "https://unavatar.io/youtube/" + userName
+  const [isFollowing, setIsFollowing] = useState(false)
+  const followText = isFollowing ? "Following" : "Follow"
 
   const bottonStyle = isFollowing
     ? "tw-follow-card-button is-following"
-    : "tw-follow-card-button";
+    : "tw-follow-card-button"
 
   function changeFollow() {
-    setIsFollowing(!isFollowing);
+    setIsFollowing(!isFollowing)
   }
   return (
     <article className="tw-follow-card">
@@ -33,5 +33,5 @@ export function TwitterCard({ userName, children }) {
         </button>
       </aside>
     </article>
-  );
+  )
 }
